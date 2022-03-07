@@ -2,7 +2,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { PostCard, Categories, PostWidget } from '../components'
-import { getPosts } from '../Services'
+import { getPosts } from '../services'
 
 export default function Home({ posts }) {
   return (

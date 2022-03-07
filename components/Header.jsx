@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import { getCategoriesHeader } from '../Services'
+import { getCategoriesHeader } from '../services'
 import Link from 'next/link'
 
 const Header = () => {
