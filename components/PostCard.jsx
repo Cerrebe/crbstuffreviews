@@ -27,7 +27,7 @@ const PostCard = ({ post }) => {
         </div>
       </div>
       <div className="mb-8 block w-full items-center justify-center text-center lg:flex">
-        <h1 className="mb-4 cursor-pointer text-center text-3xl font-semibold transition duration-700 hover:text-pink-600">
+        <h1 className="mb-4 cursor-pointer text-center text-3xl font-semibold transition duration-700 hover:text-blue-600">
           <Link href={`/post/${post.slug}`}>{post.title}</Link>
         </h1>
       </div>
@@ -36,7 +36,7 @@ const PostCard = ({ post }) => {
       </p>
       <div className="text-center">
         <Link href={`/post/${post.slug}`}>
-          <span className="inline-block transform cursor-pointer rounded-full bg-pink-600 px-8 py-3 text-lg font-medium text-white transition duration-500 hover:-translate-y-1">
+          <span className="inline-block transform cursor-pointer rounded-full bg-blue-600 px-8 py-3 text-lg font-medium text-white transition duration-500 hover:-translate-y-1">
             Continuar Leyendo
           </span>
         </Link>
@@ -44,7 +44,7 @@ const PostCard = ({ post }) => {
       <div className="float-right mb-4 mr-6 w-auto py-2 font-medium text-gray-700 lg:mb-2 lg:mr-1 lg:w-auto lg:py-0">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          className="mr-2 inline h-6 w-6 text-pink-500"
+          className="mr-2 inline h-6 w-6 text-blue-500"
           fill="none"
           viewBox="0 0 24 24"
           stroke="currentColor"
