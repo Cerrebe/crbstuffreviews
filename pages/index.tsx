@@ -1,12 +1,13 @@
 //@ts-nocheck
 import Head from 'next/head'
 import Image from 'next/image'
-import { PostCard, Categories, PostWidget } from '../components'
+import { PostCard, Categories, PostWidget, Header } from '../components'
 import { getPosts } from '../services'
 
 export default function Home({ posts }) {
   return (
     <div className="container mx-auto mb-8 px-10">
+      <meta http-equiv="refresh" content="30"></meta>
       <Head>
         <title>CRBStuffReviews</title>
         <link rel="icon" href="/favicon.ico" />
