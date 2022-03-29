@@ -9,7 +9,7 @@ const PostCard = ({ post }) => {
         <img
           src={post.featuredImage.url}
           alt={post.title}
-          className="absolute h-80 w-full rounded-t-lg object-cover object-top shadow-lg lg:rounded-lg"
+          className="absolute h-80 w-full rounded-t-lg object-cover object-top shadow-lg lg:rounded-lg lg:h-96"
         />
       </div>
       <div className="mb-8 block items-center justify-center text-center lg:float-left lg:mb-0 lg:ml-2 lg:flex">
