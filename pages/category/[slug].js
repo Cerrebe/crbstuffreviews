@@ -1,17 +1,28 @@
 import React from 'react';
+import Head from 'next/head'
 import { useRouter } from 'next/router';
 
 import { getCategories, getCategoryPost } from '../../services';
 import { PostCard, Categories, Loader } from '../../components';
 
 const CategoryPost = ({ posts }) => {
+  
   const router = useRouter();
+  
 
   if (router.isFallback) {
     return <Loader />;
   }
-
+  
   return (
+    <>
+      <div>
+        <Head>
+          <meta content={<php>trim(parse_url($url, PHP_URL_PATH), '/');</php>} property="og:title" />
+          <meta property="og:description" content="Posts de la categoría." />
+          <meta property="og:image" content="../favicon.ico" />
+        </Head>
+      </div>
     <div className="container mx-auto px-10 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-8">
@@ -25,7 +36,8 @@ const CategoryPost = ({ posts }) => {
           </div>
         </div>
       </div>
-    </div>
+      </div>
+    </>
   );
 };
 export default CategoryPost;

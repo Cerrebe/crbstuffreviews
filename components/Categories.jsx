@@ -10,13 +10,6 @@ const Categories = () => {
   }, [])
   return (
     <>
-      <div>
-        <Head>
-          <meta content={category.name} property="og:title" />
-          <meta property="og:description" content="Posts de la categoría." />
-          <meta property="og:image" content="/favicon.ico" />
-        </Head>
-      </div>
       <div className="mb-8 rounded-lg bg-white p-8 pb-12 shadow-lg">
         <h3 className="mb-8 border-b pb-4 text-xl font-semibold">Categorías</h3>
         {categories.map((category) => (

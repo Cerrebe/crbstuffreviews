@@ -1,4 +1,5 @@
 import React from 'react'
+import Head from 'next/head'
 import { useRouter } from 'next/router'
 
 import { getPosts, getPostDetails } from '../../services'
@@ -20,27 +21,37 @@ const PostDetails = ({ post }) => {
     return <Loader />
   }
   return (
-    <div className="container mx-auto mb-8 px-10">
-      <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
-        <div className="col-span-1 lg:col-span-8">
-          <PostDetail post={post} />
-          {/*
+    <>
+      <div>
+        <Head>
+          <meta content={post.title} property="og:title" />
+          <meta property="og:description" content={post.content.text} />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta property="og:image" content={post.featuredImage.url} />
+        </Head>
+      </div>
+      <div className="container mx-auto mb-8 px-10">
+        <div className="grid grid-cols-1 gap-12 lg:grid-cols-12">
+          <div className="col-span-1 lg:col-span-8">
+            <PostDetail post={post} />
+            {/*
           <Author author={post.author} />
           <CommentsForm slug={post.slug} />
           <Comments slug={post.slug} />
           */}
-        </div>
-        <div className="col-span-1 lg:col-span-4">
-          <div className="relative top-8 lg:sticky">
-            <PostWidget
-              slug={post.slug}
-              categories={post.categories.map((category) => category.slug)}
-            />
-            <Categories />
+          </div>
+          <div className="col-span-1 lg:col-span-4">
+            <div className="relative top-8 lg:sticky">
+              <PostWidget
+                slug={post.slug}
+                categories={post.categories.map((category) => category.slug)}
+              />
+              <Categories />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
