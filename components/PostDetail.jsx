@@ -76,7 +76,8 @@ const PostDetail = ({ post }) => {
     <>
       <div>
         <Head>
-          <meta content={post.title} property="og:site_name" />
+          <meta content={post.title} property="og:title" />
+          <meta property="og:description" content={post.excerpt} />
         </Head>
       </div>
       <div className="mb-8 rounded-lg bg-white pb-12 shadow-lg lg:p-8">
