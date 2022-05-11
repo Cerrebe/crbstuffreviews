@@ -8,21 +8,20 @@ import { PostCard, Categories, Loader } from '../../components';
 const CategoryPost = ({ posts }) => {
   
   const router = useRouter();
-  let slug = url => new URL(url).pathname.match(/[^\/]+/g)
 
   if (router.isFallback) {
     return <Loader />;
   }
-  
   return (
     <>
       <div>
         <Head>
-          <meta content={slug} property="og:title" />
+          <meta content="CRBStuffReviews Category Page" property="og:title" />
           <meta property="og:description" content="Posts de la categoría." />
           <meta property="og:image" content="../favicon.ico" />
         </Head>
       </div>
+      {}
     <div className="container mx-auto px-10 mb-8">
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="col-span-1 lg:col-span-8">
