@@ -74,7 +74,11 @@ const PostDetail = ({ post }) => {
 
   return (
     <>
-      <meta content={post.name} property="og:site_name" />
+      <div>
+        <Head>
+          <meta content={post.name} property="og:site_name" />
+        </Head>
+      </div>
       <div className="mb-8 rounded-lg bg-white pb-12 shadow-lg lg:p-8">
         <div className="relative mb-6 overflow-hidden shadow-md">
           <img
