@@ -10,7 +10,7 @@ export default function Home({ posts }) {
       <Head>
         <title>CRBStuffReviews</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta property="og:description" content="Reviews y otras mierdas" />
+        <meta property="og:description" content="Reviews y otras mierdas." />
         <meta content="CRBStuffReviews Main Page" property="og:title" />
         <meta property="og:image" content="/favicon.ico" />
       </Head>
