@@ -8,7 +8,7 @@ import { PostCard, Categories, Loader } from '../../components';
 const CategoryPost = ({ posts }) => {
   
   const router = useRouter();
-  
+  let slug = url => new URL(url).pathname.match(/[^\/]+/g)
 
   if (router.isFallback) {
     return <Loader />;
@@ -18,7 +18,7 @@ const CategoryPost = ({ posts }) => {
     <>
       <div>
         <Head>
-          <meta content={<php>trim(parse_url($url, PHP_URL_PATH), '/');</php>} property="og:title" />
+          <meta content={slug} property="og:title" />
           <meta property="og:description" content="Posts de la categoría." />
           <meta property="og:image" content="../favicon.ico" />
         </Head>
