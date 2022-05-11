@@ -16,7 +16,6 @@ const Header = () => {
         <meta property="og:site_name" content="CRBStuffReviews" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://crbstuffreviews.es/" />
-        <meta property="og:image" content="/favicon.ico" />
         <meta name="theme-color" content="#FF0000" />
       </Head>
       <div className="inline-block w-full border-b border-blue-400 py-8">
