@@ -12,8 +12,8 @@ const PostCard = ({ post }) => {
           className="absolute h-96 w-full rounded-t-lg object-cover object-top shadow-lg lg:rounded-lg"
         />
       </div>
-      <div className="mb-8 block items-center justify-center text-center lg:float-left lg:mb-0 lg:ml-2 lg:flex">
-        <div className="mb-4 mr-8 flex w-full items-center justify-center lg:mb-0 lg:w-auto">
+      <div className="mb-10 pb-2 inline-block items-center justify-between lg:mb-0 lg:ml-2 lg:flex w-full">
+        <div className="mb-4 mr-8 flex w-full items-center lg:mb-0 lg:w-auto lg:float-left">
           <img
             src={post.author.photo.url}
             alt={post.author.name}
@@ -34,7 +34,7 @@ const PostCard = ({ post }) => {
       <p className="text-center-text-lg mb-8 px-4 font-normal text-gray-700 lg:px-20">
         {post.excerpt}
       </p>
-      <div className="text-center">
+      <div className="text-center pb-4">
         <Link href={`/post/${post.slug}`}>
           <span className="inline-block transform cursor-pointer rounded-full bg-blue-600 px-8 py-3 text-lg font-medium text-white transition duration-500 hover:-translate-y-1">
             Continuar Leyendo

@@ -27,6 +27,7 @@ export const getPosts = async () => {
               name
               slug
             }
+            yeahs
           }
         }
       }
@@ -64,6 +65,7 @@ export const getPostDetails = async (slug) => {
         content {
           raw
         }
+        yeahs
       }
     }
   `
