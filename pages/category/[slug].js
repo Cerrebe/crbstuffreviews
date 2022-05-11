@@ -18,7 +18,7 @@ const CategoryPost = ({ posts }) => {
         <Head>
           <meta content="CRBStuffReviews Category Page" property="og:title" />
           <meta property="og:description" content="Posts de la categoría." />
-          <meta property="og:image" content="../favicon.ico" />
+          <meta property="og:image" content="../../favicon.ico" />
         </Head>
       </div>
       {}
