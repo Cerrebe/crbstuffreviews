@@ -55,7 +55,7 @@ const Header = () => {
                 title="Anilist"
               >
                 <Image
-                  src="Anilistlogo.svg"
+                  src="AniListlogo.svg"
                   height="40px"
                   width="40px"
                   className="align-middle overflow-hidden inline relative py-0"
