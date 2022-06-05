@@ -3,6 +3,30 @@ import Head from 'next/head'
 import Image from 'next/image'
 import { PostCard, Categories, PostWidget, Header } from '../components'
 import { getPosts } from '../services'
+import { useSession, signIn, signOut, SessionProvider } from 'next-auth/react'
+
+function AuthLinks() {
+  const { data: session, status } = useSession()
+
+  const loading = status === 'loading'
+
+  if (loading) return null
+
+  return (
+    <>
+      {session ? (
+        <p>
+          <span>Signed in as {session?.user?.email}</span>
+          <button onClick={signOut}>Sign out</button>
+        </p>
+      ) : (
+        <>
+          <button onClick={signIn}>Sign in</button>
+        </>
+      )}
+    </>
+  )
+}
 
 export default function Home({ posts }) {
   return (
