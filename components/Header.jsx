@@ -14,7 +14,7 @@ const Header = () => {
     <div className="container mx-auto mb-8 px-10">
       <Head>
         <title>CRBStuffReviews</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="favicon2.ico" />
         <meta property="og:site_name" content="CRBStuffReviews" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://crbstuffreviews.es/" />
