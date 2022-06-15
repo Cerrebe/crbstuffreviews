@@ -1,6 +1,6 @@
 # CRBStuffReviews
 
-A personal blog-type webpage for reviewing and other stuff.
+A personal blog-type webpage for reviewing and other stuff, currently spanish only content.
 
 Done with Next.js, React, TailwindCSS, GraphQL and GraphCMS.
 
