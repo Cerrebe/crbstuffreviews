@@ -1,4 +1,4 @@
-# Next.js + Tailwind CSS Example
+# CRBStuffReviews
 
 A personal blog-type webpage for reviewing and other stuff.
 
